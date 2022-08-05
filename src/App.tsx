@@ -13,6 +13,7 @@ const App = () => {
     function restart() {
         const newBoard = new Board();
         newBoard.initCells();
+        newBoard.addFigures();
         setBoard(newBoard);
     }
 
@@ -22,6 +23,7 @@ const App = () => {
         board={board}
         setBoard={setBoard}
       />
+
     </div>
   );
 };
